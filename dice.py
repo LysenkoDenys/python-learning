@@ -27,7 +27,7 @@ while True:
       else:
         print('Invalid choice!')
 
-#         Optional Enhancements
+# Optional Enhancements
 # • Modify the program so the user can specify how many dice they want to roll.
 # • Add a feature that keeps track of how many times the user has rolled the dice
 # during the session. This will require a counter that increments each time the
@@ -35,9 +35,9 @@ while True:
 
 def roll_the_dice2(wishes):
   str_dices=''
-  for x in wishes:
-    str_dices += random.randint(1,6)
-print(str_dices)
+  for x in range(wishes):
+    str_dices += str(random.randint(1,6))
+  print(str_dices)
 
 while True:
   print('Roll the dice? (y/n): ')
