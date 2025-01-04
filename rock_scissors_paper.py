@@ -128,73 +128,73 @@ import os
 # their choices. The program should then determine the winner based on their 
 # inputs. 
 
-ROCK='r'
-SCISSORS='s'
-PAPER='p'
+# ROCK='r'
+# SCISSORS='s'
+# PAPER='p'
 
-ROUNDS=3
+# ROUNDS=3
 
-counter=0
-user_wins=0
-user_loses=0
-user_ties=0
-computer_wins=0
-computer_loses=0
-computer_ties=0
+# counter=0
+# user_wins=0
+# user_loses=0
+# user_ties=0
+# computer_wins=0
+# computer_loses=0
+# computer_ties=0
 
-emojis={ROCK:'🥌', SCISSORS:'✂', PAPER:'🧻'}
-choices=(tuple(emojis.keys()))
+# emojis={ROCK:'🥌', SCISSORS:'✂', PAPER:'🧻'}
+# choices=(tuple(emojis.keys()))
 
-def get_user_choice():
-  while True:
-    user_choice= input(f'Rock, paper or scissors? (r/p/s):').strip().lower()
-    if user_choice in choices:
-      return user_choice
-    else:
-      print('Invalid choice!')
+# def get_user_choice():
+#   while True:
+#     user_choice= input(f'Rock, paper or scissors? (r/p/s):').strip().lower()
+#     if user_choice in choices:
+#       return user_choice
+#     else:
+#       print('Invalid choice!')
 
-def display_choices(user_choice,computer_choice):
-  print(f'You chose {emojis[user_choice]}')
-  print(f'Computer chose {emojis[computer_choice]}')
+# def display_choices(user_choice,computer_choice):
+#   print(f'You chose {emojis[user_choice]}')
+#   print(f'Computer chose {emojis[computer_choice]}')
 
-def determine_winner(user_choice,computer_choice):
-  global user_wins, user_loses, user_ties, ROUNDS
-  if user_choice==computer_choice:
-    user_ties=user_ties+1
-    print('Tie!')
-    print(f'You have wins:{user_wins} loses:{user_loses} ties:{user_ties}')
+# def determine_winner(user_choice,computer_choice):
+#   global user_wins, user_loses, user_ties, ROUNDS
+#   if user_choice==computer_choice:
+#     user_ties=user_ties+1
+#     print('Tie!')
+#     print(f'You have wins:{user_wins} loses:{user_loses} ties:{user_ties}')
 
-  elif (
-    (user_choice== ROCK and computer_choice==SCISSORS) or 
-    (user_choice== SCISSORS and computer_choice==PAPER) or 
-    (user_choice== PAPER and computer_choice==ROCK)):
-    user_wins=user_wins+1
-    print('You win')
-    print(f'You have wins:{user_wins} loses:{user_loses} ties:{user_ties}')
-    if user_wins>ROUNDS/2:
-      print(f'You are the overall winner! You`re lucky ass! 👍')
-  else:
-    user_loses=user_loses+1
-    print('You lose')
-    print(f'You have wins:{user_wins} loses:{user_loses} ties:{user_ties}')
-    if user_loses>ROUNDS/2:
-      print(f'Computer is the overall winner! You`re loser! 👎')
+#   elif (
+#     (user_choice== ROCK and computer_choice==SCISSORS) or 
+#     (user_choice== SCISSORS and computer_choice==PAPER) or 
+#     (user_choice== PAPER and computer_choice==ROCK)):
+#     user_wins=user_wins+1
+#     print('You win')
+#     print(f'You have wins:{user_wins} loses:{user_loses} ties:{user_ties}')
+#     if user_wins>ROUNDS/2:
+#       print(f'You are the overall winner! You`re lucky ass! 👍')
+#   else:
+#     user_loses=user_loses+1
+#     print('You lose')
+#     print(f'You have wins:{user_wins} loses:{user_loses} ties:{user_ties}')
+#     if user_loses>ROUNDS/2:
+#       print(f'Computer is the overall winner! You`re loser! 👎')
 
-def play_game():
-  while True:
-    user_choice=get_user_choice()
+# def play_game():
+#   while True:
+#     user_choice=get_user_choice()
 
-    computer_choice=(random.choice(choices))
+#     computer_choice=(random.choice(choices))
 
-    display_choices(user_choice,computer_choice)
+#     display_choices(user_choice,computer_choice)
 
-    determine_winner(user_choice,computer_choice)
+#     determine_winner(user_choice,computer_choice)
 
-    should_continue = input("Continue? y/n: ").strip().lower()
-    if should_continue=='n':
-      break
+#     should_continue = input("Continue? y/n: ").strip().lower()
+#     if should_continue=='n':
+#       break
 
-play_game()
+# play_game()
 
 
 # • Add an option for two players to play against each other, taking turns to input 
@@ -213,6 +213,7 @@ ROUNDS = 3
 user_wins = 0
 user_loses = 0
 user_ties = 0
+
 player1_wins = 0
 player1_losses = 0
 player1_ties = 0
