@@ -8,7 +8,7 @@
 
 ![my-blog-cv](https://github.com/user-attachments/assets/01174a58-9e0b-40c8-8e8c-b942e815e216)
 
-<p>All the projects starts from terminal in the VSC:</p>
+<p>All projects start from the terminal in VSC.:</p>
 <p>You should type:</p>
 <p>python dice.py</p>
 <br/>
