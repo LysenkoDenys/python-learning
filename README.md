@@ -9,7 +9,7 @@
 ![my-blog-cv](https://github.com/user-attachments/assets/01174a58-9e0b-40c8-8e8c-b942e815e216)
 
 <p>All projects start from the terminal in VSC.:</p>
-<p>You should type:</p>
+<p>For dice.py you should type:</p>
 <p>python dice.py</p>
 <br/>
 <p>Follow the instructions and enjoy the game</p>
@@ -26,3 +26,5 @@
 <ul>
 <li>https://pypi.org/project/qrcode</li>
 </ul>
+
+<p>Other tasks start the same.</p>
